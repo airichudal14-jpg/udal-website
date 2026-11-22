@@ -10,13 +10,13 @@
     <body>
         <!-- Header Section -->
         <header class="site-header">
-            <h1>Unfold</h1>
-            <p>The style that unfolds you.</p>
-            <img class="logo-img" src="images.png" alt="UNFOLD Women's Clothing Boutique" width="70" height="70">
+            <a class="brand" href="index.html">
+                <img class="logo-img" src="images.png" alt="UNFOLD Women's Clothing Boutique" width="70" height="70">
+                <span>UNFOLD</span>
             </a>
             <!-- Navigation Menu -->
             <nav>
-                <ul>
+                <ul class="nav-list">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#">Shop</a></li>
                     <li><a href="#about">About Us</a></li>
@@ -32,48 +32,51 @@
              <!-- Hero Section -->
             <section class="hero">
                 <h1>Trendy, affordable women's fashion from Thailand</h1>
-                <p class="tagline">Style that unfolds you.</p>
+                <p class="tagline">Style that unfolds you. Find high-quality outfits that match your personal style and your budget.</p>
                 <div class="hero-buttons">
                     <a href="#" class="btn">Shop Now</a>
-                    <a href="#features" class="btn btn-outline">Explore Now</a>
+                    <a href="#features" class="btn btn-outline">Explore Collection</a>
                 </div>
             </section>
 
             <!-- About Section -->
             <section class="about" id="about">
+                <img src="images.png" alt="UNFOLD LOGO" width="260" height="260">
+                <div class="about-text">
                 <h2>About Us</h2>
-                <p>Welcome to Unfold, your destination for trendy and affordable women's fashion from Thailand. We are passionate about providing our customers with high-quality clothing that makes them feel confident and beautiful.</p>
+                <p>UNFOLD  is a women's clothing boutique offering fashionable, high quality clothes imported from Thailand were prices stays wallet friendly.</p>
+                <p>We  believe everyday outfits should help you express who you are. Browse our collections, find your next favourite look, and let your style unfold.</p>    
+                </div>
             </section>
 
             <!-- Features Section -->
             <section class="features" id="features">
-                <h2>Our Features</h2>
-                <div class="feature">
-                    <h3>Home Page</h3>
-                    <p>Description .</p>
-                </div>
-                <div class="feature">
-                    <h3>Product Catalog</h3>
-                    <p>Description .</p>
-                </div>
-                <div class="feature">
-                    <h3>Product Details Page</h3>
-                    <p>Description.</p>
-                </div>
-                <div class="feature">
-                    <h3>Shopping Cart and Checkout</h3>
-                    <p>Description.</p>
-                </div>
-                <div class="feature">
-                    <h3>Customer Contact Form</h3>
-                    <p>Description.</p>
-                </div>
-                <div class="feature">
-                    <h3>About Us Page</h3>
-                    <p>Description.</p>
-                </div>
+                <h2>What You Can Find on UNFOLD</h2>
+                <div class="feature-grid">
+                    <div class="feature">
+                        <h3>Product Catalog</h3>
+                        <p>Browse tops, dresses, skirts, pants, and matching sets in one place.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Product Details</h3>
+                        <p>See Photos, descriptions, prices, sizes, and colors before you buy.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Cart and Checkout</h3>
+                        <p>Pick your favourite, review your selection, and checkout with ease.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Customer Contact Form</h3>
+                        <p>Ask about our products, sizes, availability, and orders status anytime.</p>
+                    </div> 
+                    <div class="feature">
+                        <h3>About Us</h3>
+                        <p>Learn more about our goal to bring trendy, quality fashion to every woman.</p>
+                    </div> 
+                </div>  
             </section>
 
+            <!-- Contact Section -->
             <section class="contact" id="contact">
                 <h2>Contact Us</h2>
                 <form action="#" method="post">
@@ -86,12 +89,14 @@
                     <label for="message">Message:</label>
                     <textarea id="message" name="message" required></textarea>
 
-                    <button type="submit">Send Message</button>
+                    <button type="submit" class="btn">Send Message</button>
                 </form>
             </section>
         </main>
-
-        <footer>
-            <p>099115777359 &copy; 2026. Airich Faye Udal.</p>
+        <!-- Footer Section-->
+        <footer class="site-footer">
+            <p>Contact: 09915777359</p>
+            <p>&copy; 2026. Website developed by Airich Faye Udal.</p>
         </footer>
-    </body>
+</body>
+</html>

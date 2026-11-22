@@ -1,12 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+*{
+    box-sizing: border-box;
+}
 
 body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        line-height: 1.6;
+        color:#292629;
         background-color: #FFF8E7;
-        font-family: "Poppins SemiBold", sans-serif;
-        margin: 40px;
     }
-    h1 {
+
+h1, h2, h3 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        line-height: 1.25;
+        color:#292629      
+}
+
+/*Header and Navigation */
+.site-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 12px 24px;
+        padding: 12px 40px;
+        background-color: #F5E8E8;
+}
+.brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
         color: #292629;
-    }
-    h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-decoration: none;
+}
+
+.logo-img {
+        border-radius: 50%;
+        object-fit: cover;
+}
+
+.nav-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 28px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+}
+
+.nav-list a {
+        display: block;
+        padding: 6px 2px;
         color: #292629;
-    }
+        text-decoration: none;
+        border-bottom: 3px solid transparent;
+}
+
+.nav-list a:hover {
+        border-bottom-color: #D7E4D1;
+        font-weight:600;
+}
+
+/* Main-Content */
+    main {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 24px;
+}
+
+section {
+        margin: 48px 0;
+}
+
+.hero {
+        padding: 72px 40px;
+        background-color: #D7E4D1;
+        border-radius: 16px;
+}
+
+.hero h1 {
+        max-width: 16em;
+        margin: 0 0 16px;
+        font-size: 2.6rem;
+}
+
+.tagline {
+        max-width: 34em;
+        margin: 0 0 32px;
+        font-size: 1.1rem;
+}
+
+.hero-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+}
+
+/*Call-to-action buttons */
+.btn {
+        display: inline-block;
+        padding: 12px 32px;
+        border: 2px solid #292629;
+        border-radius: 999px;
+        background-color: #292629;
+        color: #FFF8E7;
+        font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+        text-decoration: none;
+        cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus-visible {
+        background-color: #F5E8E8;
+        color:#292629;
+}
+
+.btn-outline {
+        background-color: transparent;
+        color:#292629;
+}
+
+/* About Section */
+.about { 
+        display: flex;
+        align-items: center;
+        gap: 40px;
+}
+
+.about img {
+        flex-shrink: 0;
+        width: 260px;
+        height: 260px;
+        object-fit: cover;
+        border-radius: 16px;
+}
+
+.about-text {
+        max-width: 38em;
+}
+
+/* Features Section */
+.feature-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 24px;
+}
+
+.feature {
+        padding: 24px;
+        background-color: #F5E8E8;
+        border-radius: 12px;
+}
+
+.feature h3 {
+        margin: 0 0 8px;
+        font-size: 1.1rem;
+}
+
+.feature p {
+        margin: 0;
+}
+
+/*Contact Form Section */
+.contact form {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        max-width: 520px;
+        padding: 24px;
+        background-color: #D7E4D1;
+        border-radius: 12px;
+}
+
+.contact label {
+        font-weight: 600;
+}
+
+.contact input,
+.contact textarea {
+        padding: 10px 12px;
+        margin-bottom: 8px;
+        border: 2px solid transparent;
+        border-radius: 8px;
+        background-color:#FFF8E7;
+        color: #292629;
+        font-family: "Poppins",  sans-serif;
+        font-size: 1rem;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+        outline: none;
+        border-color:#292629;
+}
+
+.contact .btn {
+        align-self: flex-start;
+        margin-top: 8px;
+}
+
+/* Footer Section*/
+.site-footer {
+        margin-top: 64px;
+        padding: 28px 24px;
+        background-color: #292629;
+        color: #FFF8E7; 
+        text-align: center;
+}
+
+.site-footer p{
+        margin: 4px 0;
+}
+
+/* Small Screens */
+@media (max-width: 700px) {
+        .site-header {
+            flex-direction: column;
+            padding: 12px 20px;
+        }
+        .nav-list {
+            justify-content: center;
+        }
+        .hero {
+            padding: 48px 24px;
+        }
+        .hero h1 {
+            font-size: 1.9rem;
+        }
+        .about {
+            flex-direction: column;
+            text-align: center;
+        }
+}
